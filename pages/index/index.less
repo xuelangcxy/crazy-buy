@@ -1,6 +1,199 @@
+.main-container {
+  background: #e5e5e5;
+  position: absolute;
+  width: 100%;
+}
+
+.header {
+  background: #fff;
+  padding: 0 40px;
+  height: 44px;
+  line-height: 44px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    color: #1890ff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  a {
+    // color: #1fb922;
+    color: #333;
+  }
+}
+
 .wrapper,
 .content {
 	font-size: 20px;
   color: #008080;
   text-align: center;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 10px;
+}
+
+.main-wrapper {
+  background: #fff;
+  width: 100%;
+  max-width: 1008px;
+  margin: 0 auto;
+
+  .rich-man {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 16px 0;
+    position: relative;
+
+    .left-icon,
+    .right-icon {
+      position: absolute;
+      color: rgba(0, 0, 0, 0.35);
+      font-size: 14px;
+      top: 0;
+      height: 100%;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1;
+      transition: all .1s;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+    .left-icon {
+      left: 0;
+    }
+
+    .right-icon {
+      right: 0;
+    }
+
+    .personal-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 10vw;
+      height: 10vw;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .avatar {
+      background-size: cover;
+      background-position: center;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: solid 0.5px #f5f5f5;
+    }
+
+    .name {
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 5px;
+      font-family: PingFangSC-Regular;
+    }
+  }
+
+  .left-money {
+    background: #1fb922;
+    color: #fff;
+    font-family: Futura-Medium;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .goods-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #e5e5e5;
+    height: calc(100vh - 238px);
+    overflow: auto;
+
+    .goods-item {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #fff;
+
+      .goods-name {
+        font-family: PingFangSC-Medium;
+        font-size: 13px;
+        line-height: 13px;
+        margin: 5px 0;
+        color: #333;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .goods-price {
+        font-family: Futura-Medium;
+        font-size: 14px;
+        line-height: 14px;
+        color: #c74b16;
+      }
+
+      .goods-img-wrapper {
+        width: 200px;
+        height: 160px;
+        background-size: cover;
+      }
+
+      .operate-wrapper {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // .sell,
+        // .buy {
+        //   width: 20px;
+        //   height: 24px;
+        //   border-radius: 2px;
+        //   cursor: pointer;
+        // }
+
+        // .sell {
+        //   background: #f5f5f5;
+        //   color: #333;
+        // }
+
+        // .buy {
+        //   background: #1fb922;
+        //   color: #fff;
+        // }
+
+        .number {
+          width: 120px;
+          // height: 24px;
+          // padding: 0 5px;
+        }
+      }
+    }
+  }
 }
